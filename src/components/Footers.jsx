@@ -1,9 +1,11 @@
 import React from "react";
+import { FaTimes, FaYoutube, FaInstagram, FaFacebookF } from "react-icons/fa";
+
 
 const Footers = () => {
   return (
     <div>
-      <section className="h-auto bg-[#111B21] text-white py-20 -mt-10">
+      <section className="h-[350px] bg-[#111B21] text-white py-20 -mt-10">
         <div className="flex justify-evenly items-center ">
           <div>
             <h2 className="text-lg font-semibold mb-4">What we do</h2>
@@ -40,6 +42,31 @@ const Footers = () => {
               <li>Apps</li>
               <li>Security Advisories</li>
             </ul>
+          </div>
+        </div>
+        <div className="flex justify-center items-center py-8 px-10 gap-[20px]">
+          <div className="">
+            <span className="text-white">2025 ©️ Whatsapp LLC</span>
+          </div>
+          <div className="">
+            <span className="text-white">terms & privacy policy</span>
+          </div>
+          <div className="">
+            <span className="text-white">Sitemap</span>
+          </div>
+          <div className="flex gap-[20px]">
+            <button className="p-2 rounded-full bg-[#1f2a33] hover:bg-[#2c3b46] transition">
+              <FaTimes />
+            </button>
+            <button className="p-2 rounded-full bg-[#1f2a33] hover:bg-[#2c3b46] transition">
+              <FaYoutube />
+            </button>
+            <button className="p-2 rounded-full bg-[#1f2a33] hover:bg-[#2c3b46] transition">
+              <FaInstagram />
+            </button>
+            <button className="p-2 rounded-full bg-[#1f2a33] hover:bg-[#2c3b46] transition">
+              <FaFacebookF />
+            </button>{" "}
           </div>
         </div>
       </section>
